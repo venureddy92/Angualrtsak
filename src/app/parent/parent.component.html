@@ -1,0 +1,6 @@
+<p>parent works!</p>
+<input type="text" placeholder="First Name" [(ngModel)]="currentUser.name"/>
+<input type="text" placeholder="Last Name" [(ngModel)]="currentUser.lastname"/>
+<input type="text" placeholder="Role Number" [(ngModel)]="currentUser.rolNum"/>
+   <input type="submit" (click)="saveUserInfo()"/>
+<app-children [user]="updatedUser" (sendParentData)="recieveData($event)"></app-children>
